@@ -1,0 +1,314 @@
+/* html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+} */
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  height: 3.125rem;
+  padding: .75rem;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text; /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: .25rem;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: #777;
+}
+/**
+card
+*/
+.card {
+    border : none;
+}
+.card.card-cascade.wider {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.card.card-cascade.wider .view.view-cascade {
+    z-index: 2;
+}
+
+.card.card-cascade .view.view-cascade {
+    border-radius: .25rem;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+}
+
+.view img, .view video {
+    position: relative;
+    display: block;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-img, .card-img-top, .card-img-bottom {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+#cascading-cards .card.card-cascade.wider .card-body.card-body-cascade {
+    border-bottom-right-radius: .25rem !important;
+    border-bottom-left-radius: .25rem !important;
+}
+.card.card-cascade.wider .card-body.card-body-cascade {
+    z-index: 1;
+    margin-right: 4%;
+    margin-left: 4%;
+    background: #fff;
+    border-radius: 0 0 .25rem .25rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.card-body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 0 !important;
+}
+
+.card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
+    font-weight: 400;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.blue-text {
+    color: #2196f3 !important;
+}
+.pb-2, .py-2 {
+    padding-bottom: .5rem !important;
+}
+
+.card .card-body .card-text {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #747373;
+}
+.fb-ic {
+    color: #3b5998 !important;
+}
+.tw-ic {
+    color: #55acee !important;
+}
+.li-ic {
+    color: #0082ca !important;
+}
+/*delete icon*/
+a.delete-icon{
+  position: absolute;
+  top: 0px;
+  z-index: 999;
+  right: 3px;
+  color:#333;
+  display: none;
+  transition: 0.5s ease;
+}
+a.delete-icon:hover i{
+    transform: scale(1.8);
+}
+.post-card:hover a.delete-icon{
+  display: inline;
+}
+/*delete icon*/
+.upload-form{
+  max-width: 480px;
+  margin: 0 auto;
+}
+#uploaded_img{
+  margin: 0 auto;
+  display : block;
+  max-width: 250px;
+  cursor: pointer;
+}
+#uploaded_img:hover{
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+/*start profile*/
+
+#profile{
+  margin-top: 130px;
+}
+#profile img{
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#profile h3{
+  font-size: 28px;
+  font-weight: 300;
+}
+.follow-btn,.icon-btn{
+  background: #007bff;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  height: 28px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 2px;
+  padding: 0 10px;
+}
+.follow-btn{
+  padding: 0px 30px;
+}
+#followers{
+  font-size: 15px;
+}
+#followers span:first-child{
+  padding-left: 0;
+}
+#followers span{
+  padding-left: 2rem;
+}
+#biography{
+  margin-left: 0;
+  padding: 0;
+  font-size: 15px;
+  position: relative;
+  left: -15px;
+}
+#biography h4{
+  font-size: 15px;
+}
+#items{
+  border-top: 1px solid #8c8b8b;
+  margin-top: 2vh;
+}
+#items ul li a{
+  color: #333333;
+}
+
+.post-item{
+  min-height: 300px;
+  padding: 10px;
+  padding: 0;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/*position right*/
+
+.position_right{
+  height: 500px;
+  overflow-y: scroll;
+}
+/*suggestion box*/
+.suggestion_box{
+  border: 1px solid #ddd;
+}
+
+/* info */
+.p-img{
+    margin-top: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+/*end profile*/
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
